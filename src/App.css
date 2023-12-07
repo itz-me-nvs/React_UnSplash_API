@@ -1,0 +1,46 @@
+/* App.css */
+
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border-radius for a rounded appearance */
+}
+
+.credit {
+  display: block;
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Additional styling for the card container */
+.feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Add a background color */
+}
+
+.columnUl {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.li {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+
+  /* Hover effect */
+  &:hover {
+    transform: scale(1.05);
+  }
+}
